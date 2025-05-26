@@ -18,7 +18,7 @@ jobs:
         run: msbuild Source/uacme.sln /p:Configuration=Release /p:OutDir=build_output/
 
       - name: Upload build output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build_output
           path: build_output/
