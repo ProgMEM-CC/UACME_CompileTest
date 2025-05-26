@@ -16,3 +16,9 @@ jobs:
 
       - name: Build solution
         run: msbuild Source/uacme.sln /p:Configuration=Release /p:OutDir=build_output/
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v3
+        with:
+          name: build_output
+          path: build_output/
