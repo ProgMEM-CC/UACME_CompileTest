@@ -15,4 +15,4 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Build solution
-        run: msbuild Source/uacme.sln /p:Configuration=Release
+        run: msbuild Source/uacme.sln /p:Configuration=Release /p:OutDir=build_output/
