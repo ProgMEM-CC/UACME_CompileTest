@@ -4,7 +4,6 @@ branches:
   - master
 image: Visual Studio 2022
 configuration: Release
-platform: x64
 clone_folder: c:\projects\uacme
 build:
   project: Source/uacme.sln
